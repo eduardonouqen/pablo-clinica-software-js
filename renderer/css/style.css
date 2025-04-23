@@ -90,6 +90,7 @@ p {
     padding: 15px 20px 15px 20px;
     margin-top: 2rem;
     border-radius: 0.25rem;
+    text-decoration: none;
 }
 
 .avancarButton:hover {
@@ -98,12 +99,39 @@ p {
     color: #fff;
     padding: 15px 20px 15px 20px;
     margin-top: 2rem;
+    text-decoration: none;
+}
+
+.voltarButton {
+    border: none;
+    background-color: #f6f7fc;
+    color: #2C5364;
+    padding: 15px 20px 15px 20px;
+    margin-top: 2rem;
+    border-radius: 0.25rem;
+    text-decoration: none;
+}
+
+.voltarButton:hover {
+    border: none;
+    background-color: #ededed;
+    color: #2C5364;
+    padding: 15px 20px 15px 20px;
+    margin-top: 2rem;
+    border-radius: 0.25rem;
+    text-decoration: none;
 }
 
 .alignButton {
     width: 100%;
     display: flex;
     justify-content: flex-end;
+}
+
+.alignButtonOtherPages {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .pabloLogo {

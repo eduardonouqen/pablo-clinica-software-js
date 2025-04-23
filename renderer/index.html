@@ -6,14 +6,14 @@
     <script src="https://cdn.jsdelivr.net/npm/litepicker/dist/litepicker.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/mainStyle.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Plablo Manoel - Laudo</title>
 </head>
 
 <body>
     <div class="mainContainer">
         <div>
-            <h1>1. IDENTIFICAÇÃO</h1>
+            <h1>IDENTIFICAÇÃO</h1>
             <div class="alignTwoInputs">
                 <div>
                     <p class="labelsMenores">Primeiro nome:</p>
@@ -27,7 +27,7 @@
             <div class="alignTwoInputs">
                 <div>
                     <p class="labelsMenores">Data de nascimento:</p>
-                    <input class="inputsInfos" id="date" type="date" />
+                    <input type="text" id="dataNascimento" class="inputsInfos" placeholder="dd/mm/aaaa">
                 </div>
                 <div class="itensDireita">
                     <p class="labelsMenores">Escolaridade:</p>
@@ -45,14 +45,13 @@
                 </div>
             </div>
             <div class="alignButton">
-                <button class="avancarButton">Avançar</button>
+                <a href="./screens/procedure.html" class="avancarButton">Avançar</a>
             </div>
         </div>
     </div>
     <div class="alignLogo">
         <img class="pabloLogo" src="./img/saomanoel-logo-branco.png">
     </div>
-
 
     <script>
         new Litepicker({
@@ -67,6 +66,19 @@
             },
             tooltipNumber: (totalDays) => {
                 return totalDays;
+            }
+        });
+
+        new Litepicker({
+            element: document.getElementById('dataNascimento'),
+            singleMode: true,
+            format: 'DD/MM/YYYY',
+            lang: 'pt-BR',
+            dropdowns: {
+                minYear: 1900,
+                maxYear: null,
+                months: true,
+                years: true
             }
         });
     </script>
