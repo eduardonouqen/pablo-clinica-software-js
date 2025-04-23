@@ -1,0 +1,21 @@
+body {
+    background: linear-gradient(90deg,rgba(15, 32, 39, 1) 0%, rgba(32, 58, 67, 1) 50%, rgba(44, 83, 100, 1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainContainer {
+    background-color: #fff;
+    padding-left: 15rem;
+    padding-right: 15rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    margin-top: 3rem;
+    border-radius: 1rem;
+}
+
+.alignTwoInputs {
+    display: flex;
+    align-items: center;
+}

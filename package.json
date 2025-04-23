@@ -1,0 +1,16 @@
+{
+  "name": "pablo-clinica-software",
+  "productName": "Plablo Manoel - Laudo",
+  "version": "1.0.0",
+  "description": "App para criação de laudos",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Nouqen",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^35.2.0",
+    "toastify-js": "^1.12.0"
+  }
+}
