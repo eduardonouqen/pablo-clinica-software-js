@@ -8,6 +8,7 @@ function createMainWindow() {
     const mainWindow = new BrowserWindow({
         title: 'Plablo Manoel - Laudo',
         autoHideMenuBar: true,
+        resizable: false,
         width: /*isDev ? 1000 :*/ 1000,
         height: 600
     });

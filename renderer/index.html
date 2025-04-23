@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/litepicker/dist/css/litepicker.css" />
+    <script src="https://cdn.jsdelivr.net/npm/litepicker/dist/litepicker.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/mainStyle.css" />
@@ -10,43 +12,65 @@
 
 <body>
     <div class="mainContainer">
-        <h1>1. IDENTIFICAÇÃO</h1>
-        <div class="alignTwoInputs">
-            <div class="itensEsquerda">
-                <p class="labelsMenores">Primeiro nome:</p>
-                <input class="inputsInfos">
+        <div>
+            <h1>1. IDENTIFICAÇÃO</h1>
+            <div class="alignTwoInputs">
+                <div>
+                    <p class="labelsMenores">Primeiro nome:</p>
+                    <input class="inputsInfos">
+                </div>
+                <div class="itensDireita">
+                    <p class="labelsMenores">Sobrenome:</p>
+                    <input class="inputsInfos">
+                </div>
             </div>
-            <div class="itensDireita">
-                <p class="labelsMenores">Sobrenome:</p>
-                <input class="inputsInfos">
+            <div class="alignTwoInputs">
+                <div>
+                    <p class="labelsMenores">Data de nascimento:</p>
+                    <input class="inputsInfos" id="date" type="date" />
+                </div>
+                <div class="itensDireita">
+                    <p class="labelsMenores">Escolaridade:</p>
+                    <input class="inputsInfos">
+                </div>
+            </div>
+            <div class="itemUnico">
+                <p class="labelsMenores">Solicitante:</p>
+                <input class="inputUnico">
+            </div>
+            <div class="alignTwoInputs">
+                <div>
+                    <p class="labelsMenores">Período da avaliação:</p>
+                    <input type="text" id="range-datepicker" class="inputUnico" placeholder="Selecione o período">
+                </div>
+            </div>
+            <div class="alignButton">
+                <button class="avancarButton">Avançar</button>
             </div>
         </div>
-        <div class="alignTwoInputs">
-            <div class="itensEsquerda">
-                <p class="labelsMenores">Data de nascimento:</p>
-                <input class="inputsInfos" id="date" type="date" />
-            </div>
-            <div class="itensDireita">
-                <p class="labelsMenores">Escolaridade:</p>
-                <input class="inputsInfos">
-            </div>
-        </div>
-        <div class="itensEsquerda">
-            <p class="labelsMenores">Solicitante:</p>
-            <input class="inputsInfos">
-        </div>
-        <div class="alignTwoInputs">
-            <div class="itensEsquerda">
-                <p class="labelsMenores">Início da avaliação:</p>
-                <input class="inputsInfos" id="date" type="date" />
-            </div>
-            <div class="itensDireita">
-                <p class="labelsMenores">Fim da avaliação:</p>
-                <input class="inputsInfos" id="date" type="date" />
-            </div>
-        </div>
-        <button class="avancarButton">Avançar</button>
     </div>
+    <div class="alignLogo">
+        <img class="pabloLogo" src="./img/saomanoel-logo-branco.png">
+    </div>
+
+
+    <script>
+        new Litepicker({
+            element: document.getElementById('range-datepicker'),
+            singleMode: false,
+            format: 'DD/MM/YYYY',
+            lang: 'pt-BR',
+            position: 'top',
+            tooltipText: {
+                one: 'dia',
+                other: 'dias'
+            },
+            tooltipNumber: (totalDays) => {
+                return totalDays;
+            }
+        });
+    </script>
+
 </body>
 
 </html>

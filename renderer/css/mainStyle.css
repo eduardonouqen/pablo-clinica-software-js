@@ -13,6 +13,18 @@ body {
     align-items: center;
 }
 
+h1 {
+    margin-top: 0;
+    padding: 0;
+    color: #333;
+}
+
+p {
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding: 0;
+}
+
 .mainContainer {
     background-color: #f6f7fc;
     padding-left: 5rem;
@@ -21,42 +33,89 @@ body {
     padding-bottom: 5rem;
     height: 100vh;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
 }
 
 .alignTwoInputs {
     display: flex;
     align-items: center;
+    width: 31rem;
 }
 
 .labelsMenores {
     color: #333;
-    width: 15rem;
-}
-
-.itensEsquerda {
-    width: 10rem;
 }
 
 .itensDireita {
-    width: 10rem;
-    margin-left: 100px;
+    margin-left: 72px;
 }
 
 .itemUnico {
-    width: 10rem;
-    margin-left: 100px;
+    width: 31rem;
 }
-
 
 .inputsInfos {
     border: none;
+    border-radius: 0.25rem;
     padding: 10px 10px 10px 10px;
     width: 12rem;
+    color: #495057;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.inputsInfos:focus {
+    outline: none;
+}
+
+.inputUnico {
+    border: none;
+    border-radius: 0.25rem;
+    padding: 10px 10px 10px 10px;
+    width: 29.7rem;
+    color: #495057;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.inputUnico:focus {
+    outline: none;
 }
 
 .avancarButton {
     border: none;
     background-color: #2C5364;
     color: #fff;
-    
+    padding: 15px 20px 15px 20px;
+    margin-top: 2rem;
+    border-radius: 0.25rem;
+}
+
+.avancarButton:hover {
+    border: none;
+    background-color: #1d3a46;
+    color: #fff;
+    padding: 15px 20px 15px 20px;
+    margin-top: 2rem;
+}
+
+.alignButton {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pabloLogo {
+    width: 8rem;
+    height: 8rem;
+}
+
+.alignLogo {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: calc(100% - 2rem);
+    margin-top: 2rem;
+    margin-right: 2rem;
 }
